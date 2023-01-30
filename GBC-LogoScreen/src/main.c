@@ -5,8 +5,7 @@
 
 void init_gfx() {
     // Load Background tiles and then map
-    set_bkg_palette( 0, 1, &Logo_palettes[0] );
-
+    set_bkg_palette( 0, 1, Logo_palettes);
     set_bkg_data(0, Logo_TILE_COUNT, Logo_tiles);
     set_bkg_tiles(0, 0, 20u, 18u, Logo_map);
 
