@@ -3,9 +3,12 @@
 # subdirectories and places the output in a "obj" subdirectory
 #
 
+# I install all of my Game Boy development tools in one root.
+TOOLS_ROOT = $(HOMEDRIVE)$(HOMEPATH)/OneDrive/bin/Emulators/
+
 # If you move this project you can change the directory
 # to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/"
-GBDK_HOME = C:/Users/rob/OneDrive/bin/Emulators/gbdk/
+GBDK_HOME = $(TOOLS_ROOT)gbdk/
 
 LCC = $(GBDK_HOME)bin/lcc
 
@@ -13,6 +16,9 @@ LCC = $(GBDK_HOME)bin/lcc
 # For example, you can uncomment the line below to turn on debug output
 # LCCFLAGS = -debug
 LCCFLAGS = -Wa-l -Wl-m
+
+# Run using the bgb64.exe emulator in the path
+GBEMU = $(TOOLS_ROOT)bgb/bgb64
 
 # You can set the name of the .gb ROM file here
 PROJECTNAME    = GBC-LogoScreen
@@ -51,6 +57,9 @@ $(OBJDIR)/%.s:	$(SRCDIR)/%.c
 # Link the compiled object files into a .gb ROM file
 $(BINS):	$(OBJS)
 	$(LCC) $(LCCFLAGS) -Wm-yC -o $(BINS) $(OBJS)
+
+run:	$(BINS)
+	$(GBEMU) --rom $(BINS)
 
 prepare:
 	mkdir -p $(OBJDIR)

@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.config": "xml",
-    "*.saproj": "xml",
-    "*.build": "xml",
-    "*.h": "c",
-  }
-}
