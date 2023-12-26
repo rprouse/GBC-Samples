@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.config": "xml",
+    "*.saproj": "xml",
+    "*.build": "xml",
+    "stdint.h": "c",
+    "cgb.h": "c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "gbdk",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Users/rob/OneDrive/bin/Emulators/gbdk/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "C:/Users/rob/OneDrive/bin/Emulators/gbdk/bin/lcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": []
+        }
+    ],
+    "version": 4
+}

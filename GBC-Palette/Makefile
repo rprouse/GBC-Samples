@@ -4,7 +4,7 @@
 #
 
 # You can set the name of the .gb ROM file here
-PROJECTNAME    = GBC-LogoScreen
+PROJECTNAME    = GBC-Palette
 
 # I install all of my Game Boy development tools in one root.
 TOOLS_ROOT = $(HOMEDRIVE)$(HOMEPATH)/OneDrive/bin/Emulators/
